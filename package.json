@@ -2,6 +2,7 @@
   "name": "monkeypatch",
   "version": "0.1.0",
   "private": true,
+  "license": "PolyForm-Strict-1.0.0",
   "description": "MonkeyPatch Chrome Extension Runtime & Patch SDK for MonkeyBrain",
   "type": "module",
   "scripts": {

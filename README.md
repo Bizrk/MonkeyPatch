@@ -83,3 +83,9 @@ MonkeyPatch/
 ```bash
 npm test
 ```
+
+---
+
+## License
+
+Licensed under the **[PolyForm Strict License 1.0.0](./LICENSE)** (`PolyForm-Strict-1.0.0`). You may download, build, and run MonkeyPatch for personal or internal use and author your own custom patches in `patches/personal/`, but you may not redistribute, republish modified versions, or commercially sell/re-host the software.
