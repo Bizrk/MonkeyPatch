@@ -1,0 +1,23 @@
+# Personal Patches (Private Isolation — NEVER commit to public repo)
+/patches/personal/
+patches/personal/
+
+# Extension Build Outputs & Dependencies
+/dist/
+dist/
+/node_modules/
+node_modules/
+
+# Local Env & Logs
+.env
+.env.*
+!.env.example
+*.log
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+.idea/
+.vs/
+*.user
+*.suo

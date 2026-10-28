@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MonkeyPatch</title>
+  <link rel="icon" type="image/png" href="./icons/icon-32.png" />
+  <style>
+    :root {
+      --mp-bg-canvas: #0B0700;
+      --mp-bg-surface: #1B1203;
+      --mp-bg-elevated: #271800;
+      --mp-bg-secondary: #423406;
+      --mp-bg-inset: #120B00;
+      --mp-border-subtle: rgba(91, 75, 30, 0.55);
+      --mp-border-strong: #85681A;
+      --mp-text-primary: #FFFAE9;
+      --mp-text-secondary: #E6DEC8;
+      --mp-text-muted: #CBA61F;
+      --mp-brand-accent: #FACC15;
+      --mp-soft-highlight: #FFE04B;
+      --mp-action-primary: #DB2777;
+      --mp-action-hover: #F76F9F;
+      --mp-action-subtle-bg: #3B0018;
+      --mp-action-border: #AD175C;
+      --mp-action-text: #FFA9C8;
+      --mp-success: #22C55E;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      width: 100%;
+      min-width: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: var(--mp-bg-canvas);
+      color: var(--mp-text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      font-size: 15px;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Responsive utilities for narrow Chrome Side Panel widths */
+    @media (max-width: 430px) {
+      .mp-hide-narrow {
+        display: none !important;
+      }
+      .mp-root-container {
+        padding: 12px 10px !important;
+        gap: 12px !important;
+      }
+      .mp-card {
+        padding: 12px !important;
+      }
+    }
+    @media (max-width: 365px) {
+      .mp-hide-xs {
+        display: none !important;
+      }
+    }
+    button, input, textarea, select {
+      font-family: inherit;
+    }
+    button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, a:focus-visible {
+      outline: 2px solid var(--mp-brand-accent);
+      outline-offset: 2px;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0700;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #423406;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5B4B1E;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="./src/popup/main.tsx"></script>
+</body>
+</html>

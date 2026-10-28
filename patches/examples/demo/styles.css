@@ -1,0 +1,154 @@
+.mp-demo-panel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 340px;
+  max-height: 500px;
+  background: #171b26;
+  color: #f1f5f9;
+  border: 1px solid #f59e0b;
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  font-size: 13px;
+  z-index: 2147483640;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mp-demo-header {
+  background: #0f1117;
+  padding: 10px 14px;
+  border-bottom: 1px solid #2a3142;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mp-demo-title {
+  font-weight: 700;
+  color: #f59e0b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mp-demo-body {
+  padding: 12px 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mp-demo-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.mp-demo-tab {
+  flex: 1;
+  padding: 5px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  background: #0f1117;
+  border: 1px solid #2a3142;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.mp-demo-tab.active {
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
+.mp-demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mp-demo-input,
+.mp-demo-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 9px;
+  border-radius: 6px;
+  border: 1px solid #2a3142;
+  background: #0b0e14;
+  color: #f1f5f9;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.mp-demo-btn {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #f59e0b;
+  color: #0b0e14;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.mp-demo-btn-secondary {
+  background: transparent;
+  border: 1px solid #2a3142;
+  color: #cbd5e1;
+}
+
+.mp-demo-note-item {
+  background: #0b0e14;
+  border: 1px solid #2a3142;
+  border-radius: 7px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mp-demo-note-title {
+  font-weight: 600;
+  color: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mp-demo-note-text {
+  color: #cbd5e1;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
+.mp-demo-note-meta {
+  font-size: 10px;
+  color: #64748b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.mp-demo-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.mp-demo-link-btn {
+  background: none;
+  border: none;
+  color: #f59e0b;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mp-demo-link-btn.danger {
+  color: #ef4444;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "monkeypatch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MonkeyPatch Chrome Extension Runtime & Patch SDK for MonkeyBrain",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:public",
+    "build:public": "node scripts/build.mjs public",
+    "build:personal": "node scripts/build.mjs personal",
+    "verify:public": "node scripts/verify-public-build.mjs",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.300",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "archiver": "^7.0.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  }
+}
